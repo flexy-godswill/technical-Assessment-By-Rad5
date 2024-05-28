@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="eSports Webflow Template is a premium Webflow Template for eSports teams and professional gamers. It includes everything your team needs to have an amazing website." property="og:description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - eSports - Webflow Ecommerce Website Template</title>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <nav class="navbar">
+                <div class="navbar-logo">
+                    <img src="img/Esports logo.svg" alt="This is a logo" />
+                </div>
+                <!-- Navigation Menu -->
+                <ul class="nav-links">
+                    <!-- Checkbox -->
+                    <input type="checkbox" id="checkbox-toggle" />
+                    <label for="checkbox-toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <div class="nav-actions">
+                            <li><a href="#">Cart(0)</a></li>
+                            <li><a href="" id="button-red">Buy Merch</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <!-- Navbar Here -->
+            <div class="hero-content">
+                <div class="hero-texts">
+                    <h1>
+                        Next-Generation <br />
+                        Esports Team
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et quis
+                        odio vestibulum nunc, neque integer purus.
+                    </p>
+                    <div class="two-buttons">
+                        <a href="" id="button-red">Buy Merch</a>
+                        <a href="" id="button-transparent">Meet The Team</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sponsored">
+                <h3>Sponsored by</h3>
+                <img src="img/sponsors/business.svg" alt="Business">
+                <img src="img/sponsors/company.svg" alt="Company">
+                <img src="img/sponsors/enterprise.svg" alt="Enterprise">
+                <img src="img/sponsors/startup.svg" alt="Startup">
+            </div>
+        </div>
+        <div class="content">
+            <!-- About Us Section -->
+            <div class="about-us">
+                <div class="about-texts">
+                    <h2>ABOUT THE DRAGON ESPORTS TEAM</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+                        convallis tortor, malesuada vitae tortor. Dignissim ac aliquam ut
+                        sed eu. Eget nulla elit, ac habitant.
+                    </p>
+                    <a href="#" id="button-red">Meet The Team</a>
+                </div>
+                <div class="video">
+                    <!-- Embedded YouTube Video -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QMY9dvsnfAQ?si=tAe9uMfeX0BMWD4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+            <!-- Upcoming Matches Section -->
+
+            <div class="upcoming-matches-wrapper">
+
+                <div class="matches">
+                    <h2>UPCOMING MATCHES</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis convallis <br> tortor, malesuada vitae tortor. Dignissim ac aliquam ut sed eu.</p>
+                </div>
+
+                <div class="matchimg1">
+                    <div class="to-flex">
+                        <p>Terra</p>
+                        <h2>International Tournament 2022</h2>
+                        <p><span><img src="img/time.svg" alt="time"></span> December 10, 2022 <span><img src="img/stream.svg" alt="stream">Watch Stream</span></p>
+                    </div>  
+
+                    <div class="match-opponents">
+                        <span><img src="img/red.svg" alt=""> VS <img src="img/blueandred.svg" alt=""></span>
+                    </div>
+                </div>
+
+                <div class="matchimg2">
+                    <img src="img/upcoming matches2.jpg" alt="upcoming matches">
+                </div>
+
+                <div class="matchimg3">
+                    <img src="img/upcoming matches3.jpg" alt="upcoming matches">
+                </div>
+            </div>
+
+
+            <p>Your content goes here...</p>
+            <!-- Add more content to make the page scrollable -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

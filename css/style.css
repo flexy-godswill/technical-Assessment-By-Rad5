@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fantasy;
+    background-color: #04080F;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Navigation Styling */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 140px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-logo img {
+    height: 50px;
+    width: 220px; /* Adjust size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+}
+
+#button-red {
+    margin-left: 15px;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Navbar Menu */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: red;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+/* Making My navbar responsive */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* hamburger starts */
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* Applying Media Queries */
+@media (max-width:767px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: black;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        color: red;
+        transition: 0.4s ease;
+    }
+
+    .menu li+li {
+        margin-left: 12px;
+    }
+
+    input[type="checkbox"]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50px;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: rgb(142, 109, 66);
+    }
+}
+
+/* Hero-Section */
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('../img/Hero-image.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100% - 80px); /* Leave space for the sponsored section */
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.hero-texts {
+    max-width: 600px;
+}
+
+.hero-texts h1 {
+    font-size: 5rem;
+    font-weight: 970;
+    margin: 0;
+}
+
+.hero-texts p {
+    font-size: 2rem;
+    max-width: 600px;
+    margin-bottom: 1em;
+}
+
+#button-transparent {
+    margin-left: 15px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid;
+}
+
+#button-transparent:hover {
+    background-color: red;
+    border: none;
+}
+
+.sponsored {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.sponsored h3 {
+    margin-right: 3rem;
+}
+
+.sponsored img {
+    margin: 0 15px;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000;
+    padding: 50px;
+}
+
+.about-texts {
+    max-width: 30%;
+}
+
+.about-texts h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.about-texts p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.video {
+    max-width: 70%;
+}
+
+.video iframe {
+    width: 100%;
+    height: auto;
+}
+
+/* Upcoming Matches Section */
+
+.matches{
+    text-align: center;
+    font-size: 17px;
+}
+
+.matchimg1{
+    background-image: url(../img/upcoming\ matches1.jpg);
+    background-blend-mode: overlay;
+}
